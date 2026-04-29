@@ -72,6 +72,6 @@ export default async function handler(request) {
       headers: responseHeaders,
     });
   } catch (error) {
-    return new Response("Bad Gateway: Relay Failed"." ".error, { status: 502 });
+    return new Response("Bad Gateway: Relay Failed" + " " + error, { status: 502 });
   }
 }
